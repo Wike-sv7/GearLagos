@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/ikon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout - GEAR LAGOS</title>
+</head>
+<body>
+
+<header class="header-container">
+    <table class="header-table">
+        <tr>
+            <td width="15%"><img src="images/ikon.png" alt="GEAR LAGOS Logo" width="120"></td>
+            <td width="70%">
+                <h1 class="brand-title"><span style="color: #d90429;">GEAR</span> <span style="color: #111;">LAGOS</span></h1>
+                <p>Lagos Number 1 Car Rental Service</p>
+                <p>45 Rental Avenue, Lagos, Nigeria</p>
+            </td>
+            <td width="15%" class="social-icons">
+                <img src="images/tele.jpg" alt="Telegram" width="25">
+                <img src="images/wozzles.jpeg" alt="Instagram" width="25">
+                <img src="images/what.png" alt="WhatsApp" width="25">
+                <img src="images/email.jpg" alt="Email" width="25">
+            </td>
+        </tr>
+    </table>
+</header>
+
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lagos.html">Lagos Utility</a></li>
+        <li><a href="book.html">Book an Appointment</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="booking-wrapper">
+        <section style="text-align: center; margin-bottom: 30px;">
+            <h2>Complete Your Booking</h2>
+            <p>Review your details below and confirm your booking.</p>
+        </section>
+
+        <form id="checkoutForm">
+
+            <fieldset>
+                <legend>Booking Reference</legend>
+                <p><b>Reference No:</b> BK-2026-XXXXX &nbsp;&nbsp;|&nbsp;&nbsp; <b>Status:</b> Confirmed</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>1. Vehicle &amp; Trip Summary</legend>
+
+                <div class="form-row" style="align-items: flex-start;">
+                    <div class="form-group" style="text-align: center;">
+                        <img id="checkout_car_img" src="" alt="Selected Vehicle"
+                             style="width: 100%; max-height: 220px; object-fit: cover; border-radius: 6px; border: 1px solid #ddd;">
+                    </div>
+                    <div class="form-group">
+                        <label>Selected Vehicle:</label>
+                        <input type="text" id="sum_vehicle" class="form-control" readonly>
+                        <br>
+                        <label>Pickup Location:</label>
+                        <input type="text" id="sum_pickup_location" class="form-control" readonly>
+                        <br>
+                        <label>Pickup Date:</label>
+                        <input type="text" id="sum_pickup_date" class="form-control" readonly>
+                        <br>
+                        <label>Pickup Time:</label>
+                        <input type="text" id="sum_pickup_time" class="form-control" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Return Date:</label>
+                        <input type="text" id="sum_return_date" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Return Time:</label>
+                        <input type="text" id="sum_return_time" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Estimated Duration:</label>
+                        <input type="text" id="sum_estimated_hours" class="form-control" readonly>
+                    </div>
+                </div>
+
+                <p style="margin-top: 15px; font-size: 13px;">
+                    <a href="book.html">&larr; Go back to edit booking</a>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Cost Breakdown</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Base Rate:</label>
+                        <input type="text" id="sum_base_rate" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Duration Cost:</label>
+                        <input type="text" id="sum_duration_cost" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Discount Applied:</label>
+                        <input type="text" class="form-control" value="None" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Chauffeur Fee:</label>
+                        <input type="text" id="sum_chauffeur_fee" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="form-group" style="width: 50%;">
+                    <label><b>Total Amount Due:</b></label>
+                    <input type="text" id="sum_total" class="form-control" readonly style="font-weight: bold;">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Customer Details</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name:</label>
+                        <input type="text" id="sum_fullname" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address:</label>
+                        <input type="text" id="sum_email" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number:</label>
+                        <input type="text" id="sum_phone" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Driver's License No:</label>
+                        <input type="text" id="sum_license" class="form-control" readonly>
+                    </div>
+                </div>
+                <p style="margin-top: 15px; font-size: 13px;">
+                    <a href="book.html">&larr; Go back to edit personal details</a>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Extras &amp; Preferences</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="chauffeur">Require a Chauffeur? <small>(&#8358;20,000 extra)</small></label>
+                        <select id="chauffeur" name="chauffeur" class="form-control">
+                            <option value="no">No, I will drive myself</option>
+                            <option value="yes">Yes, include a professional driver (+&#8358;20,000)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="special_requests">Special Requests:</label>
+                        <textarea id="special_requests" name="special_requests" class="form-control" rows="3" placeholder="Any additional requests or notes..."></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Payment Method</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Select Payment Method:</label>
+                        <br><br>
+                        <input type="radio" name="payment" value="paystack" checked required> Paystack (Card/USSD)<br><br>
+                        <input type="radio" name="payment" value="transfer"> Bank Transfer<br><br>
+                        <input type="radio" name="payment" value="pos"> POS on Delivery<br><br>
+                        <input type="radio" name="payment" value="showroom"> Pay at Showroom
+                    </div>
+                    <div class="form-group">
+                        <label>Bank Transfer Details:</label>
+                        <br><br>
+                        <table width="100%" border="1" cellpadding="8" cellspacing="0">
+                            <tr><td style="background:#f7f7f7; font-weight:bold;">Bank</td><td>United Bank Of Africa</td></tr>
+                            <tr><td style="background:#f7f7f7; font-weight:bold;">Account Name</td><td>GEAR LAGOS Car Rental Ltd</td></tr>
+                            <tr><td style="background:#f7f7f7; font-weight:bold;">Account Number</td><td>2377502543</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>6. Upload Payment Proof</legend>
+                <div class="form-group">
+                    <label for="payment_proof">If you paid via bank transfer, upload your receipt here:</label>
+                    <input type="file" id="payment_proof" name="payment_proof" class="form-control" accept=".pdf,.jpg,.png" style="border: none; padding-left: 0;">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>7. Final Confirmation</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="confirm" name="confirm" required>
+                    <label for="confirm">I confirm that all the details above are correct and I agree to the <a href="#terms">terms and conditions</a> of GEAR LAGOS.</label>
+                </div>
+            </fieldset>
+
+            <div class="button-group">
+                <button type="button" class="btn-primary" onclick="window.location.href='Payment.html'">Proceed to Payment</button>
+                <button type="button" class="btn-secondary" onclick="window.location.href='book.html'">Go Back</button>
+            </div>
+
+        </form>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <table class="footer-table">
+        <tr>
+            <td width="50%" valign="top">
+                <h3>Operating Hours</h3><br>
+                <p>Mon - Fri: 8:00 AM - 9:00 PM</p>
+                <p>Sat - Sun: 10:00 AM - 6:00 PM</p>
+            </td>
+            <td width="50%" valign="top" style="text-align: right;">
+                <h3>Contact Us</h3><br>
+                <p>45 Rental Avenue, Lagos</p>
+                <p><a href="tel:+2348161886404">+234 816 188 6404</a></p>
+                <p><a href="mailto:contact@gearlagos.com">contact@gearlagos.com</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="copyright">
+                <small>&copy; 2026 GEAR LAGOS Car Rental Service</small>
+            </td>
+        </tr>
+    </table>
+</footer>

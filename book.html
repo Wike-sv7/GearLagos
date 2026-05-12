@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/ikon.png">
+    <title>GEAR LAGOS - Book an Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header-container">
+    <table class="header-table">
+        <tr>
+            <td width="15%"><img src="images/ikon.png" alt="GEAR LAGOS Logo" width="120"></td>
+            <td width="70%">
+                <h1 class="brand-title"><span style="color: #d90429;">GEAR</span> <span style="color: #111;">LAGOS</span></h1>
+                <p>Lagos Number 1 Car Rental Service</p>
+                <p>45 Rental Avenue, Lagos, Nigeria</p>
+            </td>
+            <td width="15%" class="social-icons">
+                <img src="images/tele.jpg" alt="Telegram" width="25">
+                <img src="images/wozzles.jpeg" alt="Instagram" width="25">
+                <img src="images/what.png" alt="WhatsApp" width="25">
+                <img src="images/email.jpg" alt="Email" width="25">
+            </td>
+        </tr>
+    </table>
+</header>
+
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lagos.html">Lagos Utility</a></li>
+        <li><a href="visitus.html">Visit Our Showroom</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="booking-wrapper">
+        <section style="text-align: center; margin-bottom: 30px;">
+            <h2>Vehicle Booking Form</h2>
+            <p>Welcome to GEAR LAGOS. Please fill in your details below to secure your vehicle.</p>
+        </section>
+
+        <form id="bookingForm">
+
+            <fieldset>
+                <legend>Booking Details</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="car_selection">Choose Your Vehicle:</label>
+                        <select id="car_selection" name="car_selection" class="form-control" required>
+                            <option value="">-- Select a Vehicle --</option>
+                            
+                            <optgroup label="Executive & Sedans">
+                                <option value="Honda Accord (&#8358;18,000/hr)">Honda Accord (&#8358;18,000/hr)</option>
+                                <option value="Hyundai Sonata (&#8358;18,000/hr)">Hyundai Sonata (&#8358;18,000/hr)</option>
+                                <option value="Toyota Camry (&#8358;20,000/hr)">Toyota Camry (&#8358;20,000/hr)</option>
+                                <option value="Lexus ES 350 (&#8358;35,000/hr)">Lexus ES 350 (&#8358;35,000/hr)</option>
+                            </optgroup>
+
+                            <optgroup label="Luxury & Performance SUVs">
+                                <option value="Lexus RX 350H (&#8358;75,000/hr)">Lexus RX 350H (&#8358;75,000/hr)</option>
+                                <option value="Mercedes-AMG GLE 53 (&#8358;120,000/hr)">Mercedes-AMG GLE 53 (&#8358;120,000/hr)</option>
+                                <option value="BMW X5M Competition (&#8358;150,000/hr)">BMW X5M Competition (&#8358;150,000/hr)</option>
+                                <option value="Audi RSQ8 (&#8358;160,000/hr)">Audi RSQ8 (&#8358;160,000/hr)</option>
+                                <option value="Porsche Cayenne Turbo (&#8358;180,000/hr)">Porsche Cayenne Turbo (&#8358;180,000/hr)</option>
+                                <option value="Lamborghini Urus (&#8358;250,000/hr)">Lamborghini Urus (&#8358;250,000/hr)</option>
+                            </optgroup>
+
+                            <optgroup label="Lagos Utility">
+                                <option value="Keke (&#8358;18,000/wk)">Keke (&#8358;18,000/wk)</option>
+                                <option value="Bajaj Boxer (&#8358;20,000/wk)">Bajaj Boxer (&#8358;20,000/wk)</option>
+                                <option value="Suzuki Every (&#8358;30,000/wk)">Suzuki Every (&#8358;30,000/wk)</option>
+                                <option value="Volkswagen Carrier (&#8358;45,000/wk)">Volkswagen Carrier (&#8358;45,000/wk)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup_location">Pickup Location (Branch):</label>
+                        <select id="pickup_location" name="pickup_location" class="form-control" required>
+                            <option value="">-- Select a Branch --</option>
+                            <optgroup label="Mainland">
+                                <option value="Ikeja HQ (Rental Avenue)">Ikeja HQ (Rental Avenue)</option>
+                                <option value="Surulere Hub">Surulere Hub</option>
+                                <option value="Yaba Station">Yaba Station</option>
+                            </optgroup>
+                            <optgroup label="Island">
+                                <option value="Victoria Island Showroom">Victoria Island Showroom</option>
+                                <option value="Lekki Phase 1 Dispatch">Lekki Phase 1 Dispatch</option>
+                                <option value="Ajah Branch">Ajah Branch</option>
+                            </optgroup>
+                            <optgroup label="Airport Services">
+                                <option value="MMIA (Airport Delivery)">MMIA (Airport Delivery)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup_date">Pickup Date:</label>
+                        <input type="date" id="pickup_date" name="pickup_date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup_time">Pickup Time:</label>
+                        <input type="time" id="pickup_time" name="pickup_time" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="return_date">Return Date:</label>
+                        <input type="date" id="return_date" name="return_date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="return_time">Return Time:</label>
+                        <input type="time" id="return_time" name="return_time" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group" style="width: 50%;">
+                    <label for="estimated_hours">Estimated Rental Duration (hours):</label>
+                    <input type="number" id="estimated_hours" name="estimated_hours" class="form-control" min="1" required placeholder="e.g. 24">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Customer Verification</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" class="form-control" required placeholder="e.g. Oluwafoyinsolami Chukwuma Musa">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="your.email@example.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="+234 812 345 6789">
+                    </div>
+                    <div class="form-group">
+                        <label for="nin">National Identification Number (NIN):</label>
+                        <input type="text" id="nin" name="nin" class="form-control" maxlength="11" required placeholder="11-digit NIN">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="drivers_license">Driver's License Number:</label>
+                        <input type="text" id="drivers_license" name="drivers_license" class="form-control" required placeholder="Nigerian License No.">
+                    </div>
+                    <div class="form-group">
+                        <label for="license_expiry">License Expiry Date:</label>
+                        <input type="date" id="license_expiry" name="license_expiry" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Residential Address:</label>
+                    <textarea id="address" name="address" class="form-control" rows="3" required placeholder="Enter your full residential address"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="proof_of_address">Proof of Address (Upload PDF/JPG):</label>
+                    <input type="file" id="proof_of_address" name="proof_of_address" class="form-control" accept=".pdf,.jpg,.png" required style="border: none; padding-left: 0;">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Guarantor Information</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guarantor_name">Guarantor Full Name:</label>
+                        <input type="text" id="guarantor_name" name="guarantor_name" class="form-control" required placeholder="Full name of guarantor">
+                    </div>
+                    <div class="form-group">
+                        <label for="guarantor_phone">Guarantor Phone Number:</label>
+                        <input type="tel" id="guarantor_phone" name="guarantor_phone" class="form-control" required placeholder="+234 801 234 5678">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guarantor_email">Guarantor Email Address:</label>
+                        <input type="email" id="guarantor_email" name="guarantor_email" class="form-control" required placeholder="guarantor@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="guarantor_relationship">Relationship to Customer:</label>
+                        <input type="text" id="guarantor_relationship" name="guarantor_relationship" class="form-control" required placeholder="e.g. Brother, Friend">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="guarantor_address">Guarantor Address:</label>
+                    <textarea id="guarantor_address" name="guarantor_address" class="form-control" rows="2" required placeholder="Full address of guarantor"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Emergency Contact</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="emergency_name">Contact Name:</label>
+                        <input type="text" id="emergency_name" name="emergency_name" class="form-control" required placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emergency_phone">Contact Phone:</label>
+                        <input type="tel" id="emergency_phone" name="emergency_phone" class="form-control" required placeholder="+234 803 456 7890">
+                    </div>
+                    <div class="form-group">
+                        <label for="emergency_relationship">Relationship:</label>
+                        <input type="text" id="emergency_relationship" name="emergency_relationship" class="form-control" required placeholder="e.g. Spouse, Parent">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Terms and Conditions</legend>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#terms-conditions">terms and conditions</a> of GEAR LAGOS rental service.</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">I consent to the collection and use of my personal data as outlined in the <a href="#privacy-policy">privacy policy</a>.</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="insurance" name="insurance" required>
+                    <label for="insurance">I understand that I am responsible for any damage to the vehicle during the rental period.</label>
+                </div>
+            </fieldset>
+
+            <fieldset style="background-color: #f0f4f8; border-color: #b9d2e8;">
+                <legend style="background-color: #4a90e2;">Booking Reference</legend>
+                <div class="form-group">
+                    <label for="booking_ref">Reference Number:</label>
+                    <input type="text" id="booking_ref" name="booking_ref" class="form-control" value="BK-2026-XXXXX (auto-generated)" readonly style="background-color: #e9ecef; cursor: not-allowed; font-weight: bold;">
+                </div>
+                <p style="margin-top: 10px; font-size: 13px; color: #555;"><em>Note: Your official booking reference will be generated upon submission and sent to your email.</em></p>
+            </fieldset>
+
+            <div class="button-group">
+                <button type="button" class="btn-primary" id="proceedBtn">Proceed To Checkout</button>
+                <button type="reset" class="btn-secondary">Clear Form</button>
+            </div>
+
+        </form>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <table class="footer-table">
+        <tr>
+            <td width="50%" valign="top">
+                <h3>Operating Hours</h3><br>
+                <p>Mon - Fri: 8:00 AM - 9:00 PM</p>
+                <p>Sat - Sun: 10:00 AM - 6:00 PM</p>
+            </td>
+            <td width="50%" valign="top" style="text-align: right;">
+                <h3>Contact Us</h3><br>
+                <p>45 Rental Avenue, Lagos</p>
+                <p><a href="tel:+2348161886404">+234 816 188 6404</a></p>
+                <p><a href="mailto:contact@gearlagos.com">contact@gearlagos.com</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="copyright">
+                <small>&copy; 2026 GEAR LAGOS Car Rental Service</small>
+            </td>
+        </tr>
+    </table>
+</footer>
+
+<div class="login-modal-overlay" id="loginModalOverlay">
+    <div class="login-modal">
+        <button class="login-modal-close" onclick="closeLoginModal()">&times;</button>
+        <h3>Welcome Back</h3>
+        <p>Enter your details to load your saved profile and skip re-entering your information.</p>
+        <div class="form-group">
+            <label for="login_name">Full Name:</label>
+            <input type="text" id="login_name" placeholder="e.g. Segun Adebayo">
+        </div>
+        <div class="form-group">
+            <label for="login_email">Email Address:</label>
+            <input type="email" id="login_email" placeholder="your.email@example.com">
+        </div>
+        <div class="login-error" id="loginError">No saved profile found for those details. Please book first.</div>
+        <div class="button-group">
+            <button class="btn-primary" onclick="handleLogin()" style="padding: 12px 25px; font-size: 14px;">Sign In</button>
+            <button class="btn-secondary" onclick="closeLoginModal()" style="padding: 12px 25px; font-size: 14px;">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="booking.js"></script>
+</body>
+</html>

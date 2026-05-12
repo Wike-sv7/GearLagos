@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/ikon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>My Booking - GEAR LAGOS</title>
+    <style>
+        .bookings-wrapper {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .bookings-header {
+            margin-bottom: 30px;
+        }
+
+        .bookings-header h2 {
+            font-size: 36px;
+            font-weight: 900;
+            color: #111;
+            letter-spacing: -1px;
+            margin-bottom: 5px;
+        }
+
+        .bookings-header p {
+            color: #888;
+            font-size: 15px;
+        }
+
+        .booking-card {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            margin-bottom: 20px;
+        }
+
+        .booking-car-img {
+            width: 220px;
+            min-width: 220px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .booking-car-img-placeholder {
+            width: 220px;
+            min-width: 220px;
+            height: 150px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        .booking-details {
+            flex: 1;
+        }
+
+        .booking-top {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .booking-ref {
+            font-weight: bold;
+            font-size: 16px;
+            color: #111;
+        }
+
+        .status-badge {
+            background-color: #fff0f0;
+            color: #36d904;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            border: 1px solid #f5c0c0;
+        }
+
+        .booking-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .meta-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .meta-icon {
+            color: #04d93d;
+            font-size: 16px;
+            margin-top: 1px;
+        }
+
+        .meta-label {
+            font-weight: bold;
+            color: #888;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .meta-value {
+            color: #111;
+            font-weight: 500;
+        }
+
+        .booking-car-name {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #eee;
+        }
+
+        .booking-car-name h3 {
+            font-size: 18px;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 3px;
+        }
+
+        .booking-car-name p {
+            font-size: 13px;
+            color: #888;
+        }
+
+        .booking-price {
+            text-align: right;
+            min-width: 160px;
+        }
+
+        .booking-price .price-label {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+
+        .booking-price .price-amount {
+            font-size: 32px;
+            font-weight: 900;
+            color: #d90429;
+            line-height: 1;
+        }
+
+        .booking-price .booked-on {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 8px;
+        }
+
+        .booking-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .no-booking {
+            text-align: center;
+            padding: 60px 20px;
+            color: #888;
+        }
+
+        .no-booking h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container">
+        <table class="header-table">
+            <tr>
+                <td width="15%">
+                    <img src="images/ikon.png" alt="GEAR LAGOS Logo" width="120">
+                </td>
+                <td width="70%">
+                    <h1 class="brand-title">
+                        <span class="gear">GEAR</span> <span class="lagos">LAGOS</span>
+                    </h1>
+                    <p>Lagos Number 1 Car Rental Service</p>
+                    <p>45 Rental Avenue, Lagos, Nigeria</p>
+                </td>
+                <td width="15%" class="social-icons">
+                    <img src="images/tele.jpg" alt="Telegram" width="25">
+                    <img src="images/wozzles.jpeg" alt="Instagram" width="25">
+                    <img src="images/what.png" alt="WhatsApp" width="25">
+                    <img src="images/email.jpg" alt="Email" width="25">
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lagos.html">Lagos Utility</a></li>
+            <li><a href="book.html">Book a Ride</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="bookings-wrapper">
+
+            <div class="bookings-header">
+                <h2>My Booking</h2>
+                <p>View and manage your GEAR LAGOS booking below.</p>
+            </div>
+
+            <!-- Booking Card — populated by JS -->
+            <div class="booking-card" id="bookingCard">
+
+                <!-- Car Image -->
+                <div id="carImgContainer">
+                    <div class="booking-car-img-placeholder">Loading...</div>
+                </div>
+
+                <!-- Details -->
+                <div class="booking-details">
+                    <div class="booking-top">
+                        <span class="booking-ref" id="bookingRef">BK-2026-XXXXX</span>
+                        <span class="status-badge">Confirmed</span>
+                    </div>
+
+                    <div class="booking-meta">
+                        <div class="meta-row">
+                            <span class="meta-icon">&#128197;</span>
+                            <div>
+                                <div class="meta-label">Rental Period</div>
+                                <div class="meta-value" id="rentalPeriod">—</div>
+                            </div>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-icon">&#128205;</span>
+                            <div>
+                                <div class="meta-label">Pick-up Location</div>
+                                <div class="meta-value" id="pickupLocation">—</div>
+                            </div>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-icon">&#9201;</span>
+                            <div>
+                                <div class="meta-label">Duration</div>
+                                <div class="meta-value" id="duration">—</div>
+                            </div>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-icon">&#128100;</span>
+                            <div>
+                                <div class="meta-label">Booked By</div>
+                                <div class="meta-value" id="bookedBy">—</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-car-name">
+                        <h3 id="carName">—</h3>
+                        <p id="carMeta">—</p>
+                    </div>
+
+                    <div class="booking-actions">
+                        <a href="book.html" class="btn-secondary" style="font-size: 13px; padding: 10px 20px; text-decoration: none; display: inline-block;">Make Another Booking</a>
+                        <a href="index.html" class="btn-primary" style="font-size: 13px; padding: 10px 20px; text-decoration: none; display: inline-block;">Back to Home</a>
+                    </div>
+                </div>
+
+                <!-- Price -->
+                <div class="booking-price">
+                    <div class="price-label">Total Price</div>
+                    <div class="price-amount" id="totalPrice">—</div>
+                    <div class="booked-on" id="bookedOn">—</div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <table class="footer-table">
+            <tr>
+                <td width="50%" valign="top">
+                    <b>Operating Hours</b><br>
+                    Mon - Fri: 8:00 AM - 9:00 PM<br>
+                    Sat - Sun: 10:00 AM - 6:00 PM
+                </td>
+                <td width="50%" valign="top" style="text-align: right;">
+                    <b>Contact</b><br>
+                    45 Rental Avenue, Lagos<br>
+                    <a href="tel:+2348161886404">+234 816 188 6404</a><br>
+                    <a href="mailto:contact@gearlagos.com">contact@gearlagos.com</a>
+                </td>
+            </tr>
+        </table>
+        <p class="copyright">&copy; 2026 GEAR LAGOS Car Rental Service</p>
+    </footer>
+
+    <script src="booking.js"></script>
+
+</body>
+</html>

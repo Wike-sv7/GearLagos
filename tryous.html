@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/ikon.png">
+    <title>Secure Checkout - GEAR LAGOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <table class="header-table">
+            <tr>
+                <td width="15%"><img src="images/ikon.png" alt="GEAR LAGOS Logo" width="120"></td>
+                <td width="70%">
+                    <h1 class="brand-title">GEAR LAGOS</h1>
+                    <p>Lagos Number 1 Car Rental Service</p>
+                    <p>45 Rental Avenue, Lagos, Nigeria</p>
+                </td>
+                <td width="15%" class="social-icons">
+                    <img src="images/tele.jpg" alt="Telegram" width="25">
+                    <img src="images/wozzles.jpeg" alt="Instagram" width="25">
+                    <img src="images/what.png" alt="WhatsApp" width="25">
+                    <img src="images/email.jpg" alt="Email" width="25">
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lagos.html">Lagos Utility</a></li>
+            <li><a href="book.html">Book an Appointment</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="booking-wrapper">
+            <section style="text-align: center; margin-bottom: 30px;">
+                <h2>Secure Checkout</h2>
+                <p>Review your booking details and complete your payment.</p>
+            </section>
+
+            <form action="success.html" method="post">
+                
+                <fieldset>
+                    <legend>Order Summary</legend>
+                    <table class="summary-table" style="width: 100%; font-size: 16px;">
+                        <tr>
+                            <td style="padding: 15px 0; border-bottom: 1px solid #eee;"><b>Booking Reference:</b></td>
+                            <td style="padding: 15px 0; border-bottom: 1px solid #eee; text-align: right; color: #666;">BK-2026-XXXXX</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 0; border-bottom: 1px solid #eee;"><b>Vehicle:</b></td>
+                            <td style="padding: 15px 0; border-bottom: 1px solid #eee; text-align: right;">Toyota Camry</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 0; border-bottom: 1px solid #eee;"><b>Base Rate:</b></td>
+                            <td style="padding: 15px 0; border-bottom: 1px solid #eee; text-align: right;">&#8358;20,000 / hr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px 0; border-bottom: 1px solid #eee;"><b>Duration:</b></td>
+                            <td style="padding: 15px 0; border-bottom: 1px solid #eee; text-align: right;">24 Hours</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 0; font-size: 20px;"><b>Total Amount Due:</b></td>
+                            <td style="padding: 20px 0; font-size: 20px; text-align: right; color: #d90429;"><b>&#8358;480,000</b></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Method</legend>
+                    
+                    <div class="form-group">
+                        <label for="payment_method">Select how you would like to pay:</label>
+                        <select id="payment_method" name="payment_method" class="form-control" required style="font-size: 16px; padding: 12px;">
+                            <option value="">-- Choose Payment Option --</option>
+                            <option value="paystack">Paystack (Card / USSD)</option>
+                            <option value="transfer">Direct Bank Transfer</option>
+                            <option value="pos">POS at Showroom</option>
+                        </select>
+                    </div>
+
+                    <div id="bank_details_section" style="display: none; background-color: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px dashed #ccc; margin-top: 20px;">
+                        <h4 style="color: #d90429; margin-bottom: 10px;">GEAR LAGOS Account Details</h4>
+                        <p style="margin-bottom: 5px;"><b>Bank:</b> First Bank of Nigeria</p>
+                        <p style="margin-bottom: 5px;"><b>Account Name:</b> GEAR LAGOS Car Rental Ltd</p>
+                        <p style="margin-bottom: 15px;"><b>Account Number:</b> 0123456789</p>
+                        
+                        <hr style="border-top: 1px solid #ddd; margin: 15px 0;">
+
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="payment_proof">Upload Transfer Receipt (PDF/JPG/PNG):</label>
+                            <input type="file" id="payment_proof" name="payment_proof" class="form-control" accept=".pdf,.jpg,.png" style="border: none; padding-left: 0;">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="button-group" style="margin-top: 30px;">
+                    <button type="submit" class="btn-primary" style="font-size: 18px; padding: 18px;">Complete Payment</button>
+                    <button type="button" class="btn-secondary" onclick="window.history.back();">Go Back</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <table class="footer-table">
+            <tr>
+                <td width="50%" valign="top">
+                    <h3>Operating Hours</h3><br>
+                    <p>Mon - Fri: 8:00 AM - 9:00 PM</p>
+                    <p>Sat - Sun: 10:00 AM - 6:00 PM</p>
+                </td>
+                <td width="50%" valign="top" style="text-align: right;">
+                    <h3>Contact Us</h3><br>
+                    <p>45 Rental Avenue, Lagos</p>
+                    <p><a href="tel:+2348161886404">+234 816 188 6404</a></p>
+                    <p><a href="mailto:contact@gearlagos.com">contact@gearlagos.com</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="copyright">
+                    <small>&copy; 2026 GEAR LAGOS Car Rental Service</small>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script>
+        const paymentSelect = document.getElementById('payment_method');
+        const bankDetailsSection = document.getElementById('bank_details_section');
+        const paymentProofInput = document.getElementById('payment_proof');
+
+        paymentSelect.addEventListener('change', function() {
+            // If "transfer" is selected, show the bank details box and make the file upload required
+            if (this.value === 'transfer') {
+                bankDetailsSection.style.display = 'block';
+                paymentProofInput.required = true;
+            } else {
+                // Otherwise, hide the box and remove the requirement
+                bankDetailsSection.style.display = 'none';
+                paymentProofInput.required = false;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,716 @@
+/* --- GEAR LAGOS --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #d90429;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+/* --- HEADER & NAVIGATION --- */
+
+.header-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.header-table {
+    width: 100%;
+    text-align: center;
+}
+
+.header-table td {
+    vertical-align: middle;
+}
+
+.brand-title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* Color */
+.brand-title .gear,
+.brand-title span:first-child {
+    color: #d90429;
+}
+
+.brand-title .lagos,
+.brand-title span:last-child {
+    color: #111;
+}
+
+/* Color */
+.header-container h1 {
+    color: #111;
+}
+
+.social-icons img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.main-nav {
+    background-color: #111;
+    padding: 15px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.main-nav a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-nav a:hover {
+    color: #d90429;
+}
+
+/* --- MAIN CONTENT & VIDEO --- */
+.main-wrapper {
+    max-width: 1100px; /* Locks the maximum width */
+    margin: 0 auto;    /* Centers the container perfectly */
+    padding: 0 20px;   /* Breathing room on smaller screens */
+}
+
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.promo-text {
+    text-align: center;
+    font-size: 18px;
+    color: #31ff03;
+    margin: 20px 0;
+}
+
+/* --- VEHICLE LISTINGS --- */
+
+.vehicle-grid {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.vehicle-card {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #eee;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.vehicle-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+}
+
+.vehicle-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.specs-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.specs-table .label {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.status-available { color: #28a745; font-weight: bold; }
+.status-booked { color: #dc3545; font-weight: bold; }
+
+/* --- PARTNERS & FEEDBACK --- */
+
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 24px;
+}
+
+.partners-table {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.partners-table td {
+    padding: 15px;
+}
+
+.feedback-table {
+    width: 90%;
+    margin: 0 auto 40px;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.feedback-card {
+    width: 25%;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feedback-card img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* --- FOOTER --- */
+
+.site-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+.footer-table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-table td {
+    padding: 0 20px;
+    color: #ccc;
+}
+
+.footer-table b {
+    color: #d90429;
+}
+
+.footer-table a {
+    color: #ccc;
+    font-weight: normal;
+}
+
+.footer-table a:hover {
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* --- BOOKING FORM --- */
+
+.booking-wrapper {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+fieldset {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #fdfdfd;
+}
+
+legend {
+    background-color: #d90429;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fafafa;
+    color: #222;
+    transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #d90429;
+    background-color: #fff;
+}
+
+.form-control[readonly] {
+    background-color: #f0f0f0;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.checkbox-group input {
+    margin-right: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #d90429;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #a00320;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #666;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+/* --- LOGIN BAR --- */
+
+.login-bar {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 6px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.login-bar a {
+    color: #d90429;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.login-bar a:hover {
+    color: #000;
+}
+
+.login-bar span {
+    color: #555;
+}
+
+.login-bar .welcome-text {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Login Modal Overlay */
+.login-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal-overlay.active {
+    display: flex;
+}
+
+.login-modal {
+    background: #fff;
+    border-radius: 10px;
+    padding: 35px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.login-modal h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.login-modal p {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.login-modal .form-group {
+    margin-bottom: 15px;
+}
+
+.login-modal .form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.login-modal .form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fafafa;
+}
+
+.login-modal .form-group input:focus {
+    outline: none;
+    border-color: #d90429;
+    background: #fff;
+}
+
+.login-modal-close {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+    font-weight: bold;
+    background: none;
+    border: none;
+    line-height: 1;
+}
+
+.login-modal-close:hover {
+    color: #d90429;
+}
+
+.login-modal .button-group {
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.login-error {
+    color: #d90429;
+    font-size: 13px;
+    margin-top: 10px;
+    display: none;
+}
+/* --- VEHICLE SLIDER (Home Page) --- */
+
+.slider-wrapper {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scroll-hint {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    font-style: italic;
+}
+
+.vehicle-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 25px;
+    padding: 10px 10px 30px 10px; /* Bottom padding ensures box-shadows aren't cut off */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+.vehicle-slider::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari/Edge */
+}
+
+.vehicle-slider .vehicle-card {
+    min-width: 280px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* --- ABOUT US PAGE SPECIFICS --- */
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* The left side (Text Card) */
+.about-text-card {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* The right side (Your Wireframe Grid) */
+.about-visual-grid {
+    flex: 2; /* Takes up twice as much space as the text */
+    min-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+}
+
+/* General styling for all 4 boxes */
+.grid-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Box 1: Google Map */
+.map-box {
+    padding: 0; /* Remove padding so map goes edge-to-edge */
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Box 2: Stats Grid */
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    color: #d90429;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 13px;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Box 3: Client Photos */
+.mini-clients {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.mini-clients img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Overlapping effect for faces */
+.mini-clients img:not(:first-child) {
+    margin-left: -20px; 
+}
+
+/* Box 4: CTA Button */
+.cta-box {
+    background-color: #111; /* Dark background to make button pop */
+    text-align: center;
+    align-items: center;
+}
+
+.cta-box p {
+    color: #fff;
+    margin-bottom: 15px;
+}
+/* --- HERO AUTO SLIDER --- */
+.hero-slider-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.hero-slider-wrapper {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.hero-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 450px; /* Adjust height as needed */
+    object-fit: cover;
+    display: block;
+}
+
+.hero-slide-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(217, 4, 41, 0.9); /* Gear Lagos Red */
+    color: #fff;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+}

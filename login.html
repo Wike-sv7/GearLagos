@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/ikon.png">
+    <title>Login - GEAR LAGOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <table class="header-table">
+            <tr>
+                <td width="15%"><img src="images/ikon.png" alt="GEAR LAGOS Logo" width="120"></td>
+                <td width="65%">
+                    <h1 class="brand-title">GEAR LAGOS</h1>
+                    <p>Lagos Number 1 Car Rental Service</p>
+                    <p>45 Rental Avenue, Lagos, Nigeria</p>
+                </td>
+                <td width="20%" style="text-align: right; padding-right: 20px;">
+                    <div style="margin-bottom: 12px;">
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Sign Up</a>
+                    </div>
+                    <div class="social-icons">
+                        <img src="images/tele.jpg" alt="Telegram" width="25">
+                        <img src="images/wozzles.jpeg" alt="Instagram" width="25">
+                        <img src="images/what.png" alt="WhatsApp" width="25">
+                        <img src="images/email.jpg" alt="Email" width="25">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lagos.html">Lagos Utility</a></li>
+            <li><a href="book.html">Book a Ride</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="auth-wrapper">
+            <h2>Welcome Back</h2>
+            <p>Log in to access your saved details and bookings.</p>
+
+            <form action="book.html" method="POST" class="auth-form">
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <div class="auth-extras">
+                    <div class="checkbox-group" style="margin-bottom: 0;">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%;">LOGIN TO ACCOUNT</button>
+
+            </form>
+
+            <div class="auth-footer">
+                Don't have an account? <a href="signup.html">Sign up here</a>.
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <table class="footer-table">
+            <tr>
+                <td width="50%" valign="top">
+                    <h3>Operating Hours</h3><br>
+                    <p>Mon - Fri: 8:00 AM - 9:00 PM</p>
+                    <p>Sat - Sun: 10:00 AM - 6:00 PM</p>
+                </td>
+                <td width="50%" valign="top" style="text-align: right;">
+                    <h3>Contact Us</h3><br>
+                    <p>45 Rental Avenue, Lagos</p>
+                    <p><a href="tel:+2348161886404">+234 816 188 6404</a></p>
+                    <p><a href="mailto:contact@gearlagos.com">contact@gearlagos.com</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="copyright">
+                    <small>&copy; 2026 GEAR LAGOS Car Rental Service</small>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
